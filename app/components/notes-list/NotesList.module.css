@@ -1,0 +1,13 @@
+.notesList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notesListItem {
+    cursor: pointer;
+    border-radius: 4px;
+    background: #EFEFEF;
+    padding: 12px 16px;
+    margin-top: 12px;
+}
