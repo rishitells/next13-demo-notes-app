@@ -1,0 +1,22 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Story of a quick fox",
+      "text": "A quick brown fox jumps over the lazy dog",
+      "updatedAt": "2022-11-01T21:01:28Z"
+    },
+    {
+      "id": 2,
+      "title": "Hello World",
+      "text": "Hello World! React server components are awesome",
+      "updatedAt":  "2022-10-31T21:01:28Z"
+    },
+    {
+      "id": 3,
+      "title": "Note 3",
+      "text": "Note 3",
+      "updatedAt":  "2022-10-30T21:01:28Z"
+    }
+  ]
+}
