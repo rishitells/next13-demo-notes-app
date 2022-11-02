@@ -3,13 +3,6 @@
     flex-direction: row;
 }
 
-.sideBar {
-    height: 100vh;
-    width: 256px;
-    padding: 24px 12px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
-}
-
 .notePreview {
     padding: 12px 12px;
 }

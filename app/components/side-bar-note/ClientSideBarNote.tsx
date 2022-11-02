@@ -1,27 +1,19 @@
 "use client";
 import React, { useState } from "react";
-import {useRouter} from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const ClientSideBarNote: React.FC<{
   noteId: string;
   children: React.ReactNode;
-  expandedChildren: React.ReactNode;
-}> = ({ noteId, children, expandedChildren }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+}> = ({ noteId, children }) => {
   const router = useRouter();
 
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-    router.push(`?id=${noteId}`);
+  const handleClick = () => {
+    router.push(`/note/${noteId}`);
     router.refresh();
   };
 
-  return (
-    <div onClick={toggleExpand}>
-      {children}
-      {isExpanded && expandedChildren}
-    </div>
-  );
+  return <div onClick={handleClick}>{children}</div>;
 };
 
 export default ClientSideBarNote;
