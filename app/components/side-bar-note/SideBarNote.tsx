@@ -12,7 +12,7 @@ const SideBarNote = ({ note }: { note: Note }) => {
     : format(updatedAt, "dd/MM/yyyy");
 
   return (
-    <ClientSideBarNote noteId={note.id} expandedChildren={<p>{note.text}</p>}>
+    <ClientSideBarNote noteId={note.id}>
       <div className={styles.sideBarNoteListItem}>
         <header>
           <strong>{note.title}</strong>

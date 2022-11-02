@@ -9,8 +9,6 @@ const NotesList = ({ notes }: { notes: Notes }) => {
       {notes.map((note) => (
         <li className={styles.notesListItem} key={note.id}>
           <SideBarNote note={note} />
-          {/*<h2>{note.title}</h2>*/}
-          {/*<p>{note.text}</p>*/}
         </li>
       ))}
     </ul>
